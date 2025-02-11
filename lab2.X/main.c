@@ -173,7 +173,6 @@ int main(){
     init_timer3(); 
     
     /*
-    // Toggles LED4 every iteration
      * Task #1
     */
     while(1){
