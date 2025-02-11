@@ -89,7 +89,7 @@ void __attribute__((__interrupt__)) _T2Interrupt(void)
     if (t2_counter >= 5){ // toggle LED1 every 5 ms
        
         TOGGLELED(LED1_PORT);
-        t2_counter = 0; // rest counter
+        t2_counter = 0; // reset counter
         
     }
     IFS0bits.T2IF = 0; // clear t2 interrupt flag
@@ -106,25 +106,6 @@ void init_timer3() {
 }
 
 
-
-
-void init_timer4(int period_val) {
-    CLEARBIT(T4CONbits.TON);
-    CLEARBIT(T4CONbits.TCS);
-    CLEARBIT(T4CONbits.TGATE);
-    TMR4 = 0x00;
-    T4CONbits.TCKPS = 0b10;
-    PR4 = period_val;
-    IPC6bits.T4IP = 0x01;
-    CLEARBIT(IFS1bits.T4IF);
-    SETBIT(IEC1bits.T4IE);
-    // SETBIT(T1CONbits.TON);
-}
-
-void __attribute__((__interrupt__)) _T4Interrupt(void) {
-    times_up4 = 1;
-    IFS1bits.T4IF = 0;
-}
 /*
  * Comments for lab partners:
  * 
@@ -146,25 +127,22 @@ void __attribute__((__interrupt__)) _INT1Interrupt(void) {
 
 /* Prints minutes, sec, ms in given format. input: ms*/
 void print_time(uint16_t time){
-    lcd_clear()
+
     uint16_t mins = time /60000; 
     uint16_t secs = (time % 60000) /1000;
     uint16_t ms = time % 1000;
     
     lcd_locate(0,0); 
-    lcd_printf("%02u:%02u.%03u", mins, secs, ms);
+    lcd_printf("%02u:%02u.%03u ", mins, secs, ms);
+    
 }
 
 void print_t3(){
     uint16_t cycle = TMR3; 
     float time_ms = (float)cycle / (12.8 / 1000.0); // convert to ms
     
-    lcd_locate(0, 3);
-    lcd_printf("%u ",cycle); 
-    
-    lcd_locate(0, 4);
-    lcd_printf("%.4f", time_ms)
-    TMR3 = 0; 
+    lcd_locate(0, 2);
+    lcd_printf("Cycle: %u \rTime: %.4f ",cycle, time_ms);
 }
 
 
@@ -177,7 +155,7 @@ int main(){
             
     
     
-    init_timer2(24); // Initializes the second timer using the parameter as the period
+    init_timer2(50); // Initializes the second timer using the parameter as the period
     init_timer1(32767); // Initializes the first timer using the parameter as the period
     
     
@@ -192,7 +170,6 @@ int main(){
     INTCON2bits.INT1EP = 1; /*Interrupt Control Register 2 External
     Interrupt 1 Edge Detect Polarity Select bit*/
     
-    init_timer4(50000);
     init_timer3(); 
     
     /*
@@ -200,16 +177,15 @@ int main(){
      * Task #1
     */
     while(1){
+        TMR3 = 0; // reset timer3 every time but only print every 25000th time 
         reset_counter++; 
         TOGGLELED(LED4_PORT); // Toggle LED1(BIT ^= 1)
+        
         if (reset_counter >= 25000){
             print_time(reset_counter_ms);
             reset_counter = 0;
-            
+            print_t3();
         }
-
-//        print_t3();
-        
     }
 
     return 0;
