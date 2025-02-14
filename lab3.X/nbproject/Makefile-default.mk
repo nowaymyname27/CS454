@@ -51,17 +51,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=../../Downloads/lab3/aux/Client/crc16.c ../../Downloads/lab3/aux/Client/main.c ../../Downloads/lab3/aux/Client/timer.c ../../Downloads/lab3/aux/Client/uart.c
+SOURCEFILES_QUOTED_IF_SPACED=../../Downloads/lab3/aux/Client/crc16.c ../../Downloads/lab3/aux/Client/main.c ../../Downloads/lab3/aux/Client/timer.c ../../Downloads/lab3/aux/Client/uart.c ../../Downloads/lab3/aux/lab3_server.c ../../Downloads/lab3/aux/lab3_server_sol.c ../../Downloads/lab3/aux/lab3_troll.c ../../Downloads/lab3/aux/pc_crc16.c ../../Downloads/lab3/aux/serialdebug.c
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/_ext/91187227/crc16.o ${OBJECTDIR}/_ext/91187227/main.o ${OBJECTDIR}/_ext/91187227/timer.o ${OBJECTDIR}/_ext/91187227/uart.o
-POSSIBLE_DEPFILES=${OBJECTDIR}/_ext/91187227/crc16.o.d ${OBJECTDIR}/_ext/91187227/main.o.d ${OBJECTDIR}/_ext/91187227/timer.o.d ${OBJECTDIR}/_ext/91187227/uart.o.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/_ext/91187227/crc16.o ${OBJECTDIR}/_ext/91187227/main.o ${OBJECTDIR}/_ext/91187227/timer.o ${OBJECTDIR}/_ext/91187227/uart.o ${OBJECTDIR}/_ext/503017505/lab3_server.o ${OBJECTDIR}/_ext/503017505/lab3_server_sol.o ${OBJECTDIR}/_ext/503017505/lab3_troll.o ${OBJECTDIR}/_ext/503017505/pc_crc16.o ${OBJECTDIR}/_ext/503017505/serialdebug.o
+POSSIBLE_DEPFILES=${OBJECTDIR}/_ext/91187227/crc16.o.d ${OBJECTDIR}/_ext/91187227/main.o.d ${OBJECTDIR}/_ext/91187227/timer.o.d ${OBJECTDIR}/_ext/91187227/uart.o.d ${OBJECTDIR}/_ext/503017505/lab3_server.o.d ${OBJECTDIR}/_ext/503017505/lab3_server_sol.o.d ${OBJECTDIR}/_ext/503017505/lab3_troll.o.d ${OBJECTDIR}/_ext/503017505/pc_crc16.o.d ${OBJECTDIR}/_ext/503017505/serialdebug.o.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/_ext/91187227/crc16.o ${OBJECTDIR}/_ext/91187227/main.o ${OBJECTDIR}/_ext/91187227/timer.o ${OBJECTDIR}/_ext/91187227/uart.o
+OBJECTFILES=${OBJECTDIR}/_ext/91187227/crc16.o ${OBJECTDIR}/_ext/91187227/main.o ${OBJECTDIR}/_ext/91187227/timer.o ${OBJECTDIR}/_ext/91187227/uart.o ${OBJECTDIR}/_ext/503017505/lab3_server.o ${OBJECTDIR}/_ext/503017505/lab3_server_sol.o ${OBJECTDIR}/_ext/503017505/lab3_troll.o ${OBJECTDIR}/_ext/503017505/pc_crc16.o ${OBJECTDIR}/_ext/503017505/serialdebug.o
 
 # Source Files
-SOURCEFILES=../../Downloads/lab3/aux/Client/crc16.c ../../Downloads/lab3/aux/Client/main.c ../../Downloads/lab3/aux/Client/timer.c ../../Downloads/lab3/aux/Client/uart.c
+SOURCEFILES=../../Downloads/lab3/aux/Client/crc16.c ../../Downloads/lab3/aux/Client/main.c ../../Downloads/lab3/aux/Client/timer.c ../../Downloads/lab3/aux/Client/uart.c ../../Downloads/lab3/aux/lab3_server.c ../../Downloads/lab3/aux/lab3_server_sol.c ../../Downloads/lab3/aux/lab3_troll.c ../../Downloads/lab3/aux/pc_crc16.c ../../Downloads/lab3/aux/serialdebug.c
 
 
 
@@ -113,6 +113,36 @@ ${OBJECTDIR}/_ext/91187227/uart.o: ../../Downloads/lab3/aux/Client/uart.c  .gene
 	@${RM} ${OBJECTDIR}/_ext/91187227/uart.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE)  ../../Downloads/lab3/aux/Client/uart.c  -o ${OBJECTDIR}/_ext/91187227/uart.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/_ext/91187227/uart.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1    -omf=coff -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -O0 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
 	
+${OBJECTDIR}/_ext/503017505/lab3_server.o: ../../Downloads/lab3/aux/lab3_server.c  .generated_files/flags/default/a4f5128560cf3041b247c924a8a218ec107f4dc3 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}/_ext/503017505" 
+	@${RM} ${OBJECTDIR}/_ext/503017505/lab3_server.o.d 
+	@${RM} ${OBJECTDIR}/_ext/503017505/lab3_server.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE)  ../../Downloads/lab3/aux/lab3_server.c  -o ${OBJECTDIR}/_ext/503017505/lab3_server.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/_ext/503017505/lab3_server.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1    -omf=coff -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -O0 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
+	
+${OBJECTDIR}/_ext/503017505/lab3_server_sol.o: ../../Downloads/lab3/aux/lab3_server_sol.c  .generated_files/flags/default/64ff71211e20861f47d31173cdf790695906a78c .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}/_ext/503017505" 
+	@${RM} ${OBJECTDIR}/_ext/503017505/lab3_server_sol.o.d 
+	@${RM} ${OBJECTDIR}/_ext/503017505/lab3_server_sol.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE)  ../../Downloads/lab3/aux/lab3_server_sol.c  -o ${OBJECTDIR}/_ext/503017505/lab3_server_sol.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/_ext/503017505/lab3_server_sol.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1    -omf=coff -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -O0 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
+	
+${OBJECTDIR}/_ext/503017505/lab3_troll.o: ../../Downloads/lab3/aux/lab3_troll.c  .generated_files/flags/default/48905d70b60877e0fc5f2d19512fab8e16a59d1b .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}/_ext/503017505" 
+	@${RM} ${OBJECTDIR}/_ext/503017505/lab3_troll.o.d 
+	@${RM} ${OBJECTDIR}/_ext/503017505/lab3_troll.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE)  ../../Downloads/lab3/aux/lab3_troll.c  -o ${OBJECTDIR}/_ext/503017505/lab3_troll.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/_ext/503017505/lab3_troll.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1    -omf=coff -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -O0 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
+	
+${OBJECTDIR}/_ext/503017505/pc_crc16.o: ../../Downloads/lab3/aux/pc_crc16.c  .generated_files/flags/default/5b4155ff87dce0a8eb7c14a7a4457d5703623773 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}/_ext/503017505" 
+	@${RM} ${OBJECTDIR}/_ext/503017505/pc_crc16.o.d 
+	@${RM} ${OBJECTDIR}/_ext/503017505/pc_crc16.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE)  ../../Downloads/lab3/aux/pc_crc16.c  -o ${OBJECTDIR}/_ext/503017505/pc_crc16.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/_ext/503017505/pc_crc16.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1    -omf=coff -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -O0 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
+	
+${OBJECTDIR}/_ext/503017505/serialdebug.o: ../../Downloads/lab3/aux/serialdebug.c  .generated_files/flags/default/50bc835ef0d0a4744984b91a24ea4c559590fd4d .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}/_ext/503017505" 
+	@${RM} ${OBJECTDIR}/_ext/503017505/serialdebug.o.d 
+	@${RM} ${OBJECTDIR}/_ext/503017505/serialdebug.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE)  ../../Downloads/lab3/aux/serialdebug.c  -o ${OBJECTDIR}/_ext/503017505/serialdebug.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/_ext/503017505/serialdebug.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1    -omf=coff -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -O0 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
+	
 else
 ${OBJECTDIR}/_ext/91187227/crc16.o: ../../Downloads/lab3/aux/Client/crc16.c  .generated_files/flags/default/b0a31802274a5b06014067b248c835169311a47f .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
 	@${MKDIR} "${OBJECTDIR}/_ext/91187227" 
@@ -137,6 +167,36 @@ ${OBJECTDIR}/_ext/91187227/uart.o: ../../Downloads/lab3/aux/Client/uart.c  .gene
 	@${RM} ${OBJECTDIR}/_ext/91187227/uart.o.d 
 	@${RM} ${OBJECTDIR}/_ext/91187227/uart.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE)  ../../Downloads/lab3/aux/Client/uart.c  -o ${OBJECTDIR}/_ext/91187227/uart.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/_ext/91187227/uart.o.d"        -g -omf=coff -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -O0 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
+	
+${OBJECTDIR}/_ext/503017505/lab3_server.o: ../../Downloads/lab3/aux/lab3_server.c  .generated_files/flags/default/9b133e8772887d269e38e64907dc02e8cb1f7a34 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}/_ext/503017505" 
+	@${RM} ${OBJECTDIR}/_ext/503017505/lab3_server.o.d 
+	@${RM} ${OBJECTDIR}/_ext/503017505/lab3_server.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE)  ../../Downloads/lab3/aux/lab3_server.c  -o ${OBJECTDIR}/_ext/503017505/lab3_server.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/_ext/503017505/lab3_server.o.d"        -g -omf=coff -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -O0 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
+	
+${OBJECTDIR}/_ext/503017505/lab3_server_sol.o: ../../Downloads/lab3/aux/lab3_server_sol.c  .generated_files/flags/default/c235516fc097422fb872aa558ef6d82158bc1f5 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}/_ext/503017505" 
+	@${RM} ${OBJECTDIR}/_ext/503017505/lab3_server_sol.o.d 
+	@${RM} ${OBJECTDIR}/_ext/503017505/lab3_server_sol.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE)  ../../Downloads/lab3/aux/lab3_server_sol.c  -o ${OBJECTDIR}/_ext/503017505/lab3_server_sol.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/_ext/503017505/lab3_server_sol.o.d"        -g -omf=coff -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -O0 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
+	
+${OBJECTDIR}/_ext/503017505/lab3_troll.o: ../../Downloads/lab3/aux/lab3_troll.c  .generated_files/flags/default/39f5f3a52846a29a5022be9c7d75feda2af4b922 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}/_ext/503017505" 
+	@${RM} ${OBJECTDIR}/_ext/503017505/lab3_troll.o.d 
+	@${RM} ${OBJECTDIR}/_ext/503017505/lab3_troll.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE)  ../../Downloads/lab3/aux/lab3_troll.c  -o ${OBJECTDIR}/_ext/503017505/lab3_troll.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/_ext/503017505/lab3_troll.o.d"        -g -omf=coff -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -O0 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
+	
+${OBJECTDIR}/_ext/503017505/pc_crc16.o: ../../Downloads/lab3/aux/pc_crc16.c  .generated_files/flags/default/d8d1673dd0dff9b875a2c411f8c5529fd6a7521e .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}/_ext/503017505" 
+	@${RM} ${OBJECTDIR}/_ext/503017505/pc_crc16.o.d 
+	@${RM} ${OBJECTDIR}/_ext/503017505/pc_crc16.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE)  ../../Downloads/lab3/aux/pc_crc16.c  -o ${OBJECTDIR}/_ext/503017505/pc_crc16.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/_ext/503017505/pc_crc16.o.d"        -g -omf=coff -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -O0 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
+	
+${OBJECTDIR}/_ext/503017505/serialdebug.o: ../../Downloads/lab3/aux/serialdebug.c  .generated_files/flags/default/62239add41b08d389d29c430126c80027fe71770 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}/_ext/503017505" 
+	@${RM} ${OBJECTDIR}/_ext/503017505/serialdebug.o.d 
+	@${RM} ${OBJECTDIR}/_ext/503017505/serialdebug.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE)  ../../Downloads/lab3/aux/serialdebug.c  -o ${OBJECTDIR}/_ext/503017505/serialdebug.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/_ext/503017505/serialdebug.o.d"        -g -omf=coff -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -O0 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
 	
 endif
 

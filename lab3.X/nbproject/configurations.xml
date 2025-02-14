@@ -6,13 +6,14 @@
                    projectFiles="true">
       <itemPath>joystick.h</itemPath>
       <itemPath>led.h</itemPath>
-      <itemPath>types.h</itemPath>
       <itemPath>../../Downloads/lab3/aux/Client/crc16.h</itemPath>
       <itemPath>../../Downloads/lab3/aux/Client/lab3.h</itemPath>
       <itemPath>../../Downloads/lab3/aux/Client/lcd.h</itemPath>
       <itemPath>../../Downloads/lab3/aux/Client/timer.h</itemPath>
       <itemPath>../../Downloads/lab3/aux/Client/types.h</itemPath>
       <itemPath>../../Downloads/lab3/aux/Client/uart.h</itemPath>
+      <itemPath>../../Downloads/lab3/aux/lab3_troll.h</itemPath>
+      <itemPath>../../Downloads/lab3/aux/pc_crc16.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -25,6 +26,11 @@
       <itemPath>../../Downloads/lab3/aux/Client/main.c</itemPath>
       <itemPath>../../Downloads/lab3/aux/Client/timer.c</itemPath>
       <itemPath>../../Downloads/lab3/aux/Client/uart.c</itemPath>
+      <itemPath>../../Downloads/lab3/aux/lab3_server.c</itemPath>
+      <itemPath>../../Downloads/lab3/aux/lab3_server_sol.c</itemPath>
+      <itemPath>../../Downloads/lab3/aux/lab3_troll.c</itemPath>
+      <itemPath>../../Downloads/lab3/aux/pc_crc16.c</itemPath>
+      <itemPath>../../Downloads/lab3/aux/serialdebug.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -33,7 +39,7 @@
     </logicalFolder>
   </logicalFolder>
   <sourceRootList>
-    <Elem>../../Downloads/lab3/aux/Client</Elem>
+    <Elem>../../Downloads/lab3/aux</Elem>
   </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
